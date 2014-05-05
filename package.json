@@ -1,0 +1,43 @@
+{
+  "name": "img-hitmap",
+  "version": "0.1.0",
+  "description": "An <img> hitmap",
+  "main": "./index.js",
+  "scripts": {
+    "test": "./node_modules/testling/bin/cmd.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:orangemug/img-hitmap.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/orangemug/img-hitmap/issues"
+  },
+  "dependencies": {
+    "parse-color": "*",
+    "lodash.bind": "~2.4.1",
+    "image-to-context": "git://github.com/orangemug/image-to-context.git#master"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "testling": "~1.6.1",
+    "express": "3.x",
+    "sinon": "~1.9.1",
+    "browserify-middleware": "~2.6.0",
+    "customevent-polyfill": "git://github.com/orangemug/customevent-polyfill.git"
+  },
+  "testling": {
+    "harness": "mocha-tdd",
+    "browsers": [
+      "ie/9..latest",
+      "firefox/24..latest",
+      "chrome/28..latest",
+      "opera/12.0", "opera/15..latest",
+      "iphone/6..latest",
+      "safari/5.1..latest"
+    ],
+    "harness" : "mocha",
+    "files": "./test/index.js"
+  }
+}

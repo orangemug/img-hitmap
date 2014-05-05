@@ -1,0 +1,9 @@
+.demo-image {
+  width: 100%;
+}
+
+label {
+  font-weight: bold;
+  width: 50px;
+  display: inline-block;
+}
